@@ -3,17 +3,17 @@
 Low-level CSS toolkit by [Brent Jackson](https://github.com/jxnblk/basscss.git)
 http://basscss.com
 
-This package dynamically compiles your cssnext source and includes the basscss modules at runtime
+This package dynamically compiles your cssnext source including the basscss modules at runtime
 
-`kit:cssnext-basscss` depends and extends `kit:cssnext`
+`kit:cssnext-basscss` depends on and extends `kit:cssnext`
 
 #### Install
 ```
 meteor add kit:cssnext-basscss
 ```
-Below is an example of how to include and compile a basscss source file.
+Create a file named `basscss.next.css` and include modules to taste.
 
-Create a file named `basscss.next.css` and include modules to taste:
+Below is an example of how to include and compile a custom basscss source.
 
 ```CSS
 /*
