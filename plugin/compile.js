@@ -31,8 +31,8 @@ var options = {
   import: { path: pathDirs }
 };
 
-compileWithExtension = function(compileStep, isLiterate) {
+compileWithExtensions = function(compileStep, isLiterate) {
   return Cssnext.compile(compileStep, isLiterate, options)
 };
 
-Plugin.registerSourceHandler('basscss.next.css', {archMatching: 'web'}, compileWithExtension);
+Plugin.registerSourceHandler('basscss.next.css', {archMatching: 'web'}, compileWithExtensions);
