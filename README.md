@@ -5,7 +5,7 @@ http://basscss.com
 
 This package dynamically compiles your cssnext source and includes the basscss modules at runtime
 
-`kit:cssnex-basscss` depends and extends `kit:cssnext`
+`kit:cssnext-basscss` depends and extends `kit:cssnext`
 
 #### Install
 ```
