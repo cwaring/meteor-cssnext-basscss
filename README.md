@@ -9,11 +9,11 @@ This package dynamically compiles your cssnext source and includes the basscss m
 
 #### Install
 ```
-meteor add kit:cssnext kit:cssnext-basscss
+meteor add kit:cssnext-basscss
 ```
 Below is an example of how to include and compile a basscss source file.
 
-Create a file named `basscss.next.css` and include your modules to taste:
+Create a file named `basscss.next.css` and include modules to taste:
 
 ```CSS
 /*
