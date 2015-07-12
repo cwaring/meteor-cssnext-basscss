@@ -12,6 +12,8 @@ This package dynamically compiles your cssnext source including the basscss modu
 meteor add kit:cssnext-basscss
 ```
 Create a file named `basscss.next.css` and include modules to taste.
+Note: I recommend creating it inside of a `lib` directory to load it before other CSS
+e.g. `/client/lib/basscss.next.css`
 
 Below is an example of how to include and compile a custom basscss source.
 
