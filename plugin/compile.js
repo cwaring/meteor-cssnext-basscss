@@ -1,23 +1,12 @@
 var path = Npm.require('path');
 var base = path.resolve('.');
-var packageDirs = [];
-var pathDirs = [];
+
+var basscssPath =
+  MeteorFilesHelpers.getNodeModulePath('kit:cssnext-basscss', 'basscss');
 
 var importDirs = [
-  '/kit:cssnext-basscss/.npm/plugin/cssnext-basscss/node_modules/basscss/node_modules/', // basscss core
-  '/kit:cssnext-basscss/.npm/plugin/cssnext-basscss/node_modules/'] //basscss extensions
-packageDirs.push(base + '/packages');
-
-// if building from source include package path
-if (process.env.PACKAGE_DIRS) {
-  packageDirs.push(process.env.PACKAGE_DIRS)
-}
-
-packageDirs.forEach(function(packageDir){
-  importDirs.forEach(function(iPath){
-    pathDirs.push(packageDir + iPath);
-  })
-})
+  path.join(basscssPath, 'node_modules'), // basscore,
+  path.resolve(basscssPath, '../') ] //basscss extensions
 
 var options = {
   features: {
@@ -28,7 +17,7 @@ var options = {
     pseudoElements: false,
     colorRgba: false
   },
-  import: { path: pathDirs }
+  import: { path: importDirs }
 };
 
 compileWithExtensions = function(compileStep, isLiterate) {
