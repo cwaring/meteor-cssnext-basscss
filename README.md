@@ -1,6 +1,8 @@
 # Basscss for Meteor
 
-Low-level CSS toolkit by [Brent Jackson](https://github.com/jxnblk/basscss.git)
+Version v7.0.2
+
+Low-level CSS toolkit by [Brent Jackson](https://github.com/basscss/basscss)
 http://basscss.com
 
 This package dynamically compiles your cssnext source including the basscss modules at runtime
