@@ -32,7 +32,7 @@ Package.registerBuildPlugin({
   name: 'cssnext-basscss',
   use: [
     'kit:cssnext@0.2.0',
-    'sanjo:meteor-files-helpers@1.1.0_6' ],
+    'sanjo:meteor-files-helpers@1.1.0_7' ],
   sources: [
     'plugin/compile.js'
   ]
