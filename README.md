@@ -1,6 +1,6 @@
 # Basscss for Meteor
 
-Version v7.0.2
+Version v7.0.4
 
 Low-level CSS toolkit by [Brent Jackson](https://github.com/basscss/basscss)
 http://basscss.com
