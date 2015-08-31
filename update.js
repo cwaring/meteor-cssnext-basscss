@@ -6,29 +6,16 @@ var exec = require('child_process').exec,
 
 var modules = {
   'basscss': '',
-  'basscss-base-buttons': '',
-  'basscss-button-sizes': '',
+  'basscss-btn-sizes' : '',
   'basscss-color-forms-dark': '',
   'basscss-input-range': '',
   'basscss-progress': '',
-  'basscss-button-outline': '',
-  'basscss-button-transparent': '',
   'basscss-background-images': '',
   'basscss-media-object': '',
   'basscss-responsive-white-space': '',
   'basscss-utility-headings': '',
   'basscss-ui-utility-groups': '',
   'basscss-table-object': '',
-  'basscss-color-buttons': '',
-  'basscss-button-link': '',
-  'basscss-button-blue': '',
-  'basscss-button-blue-outline': '',
-  'basscss-button-gray': '',
-  'basscss-button-light-gray': '',
-  'basscss-button-red': '',
-  'basscss-button-nav-light': '',
-  'basscss-button-nav-dark': '',
-  'basscss-button-nav-tab': '',
   'basscss-highlight-dark': '',
   'basscss-highlight': ''
 }
@@ -50,8 +37,14 @@ Object.keys(modules).forEach(function(module){
 
       latestModules[module] = versions[versions.length - 1];
 
-      console.log(latestModules);
-      console.log('stderr: ' + stderr);
+      var result = [];
+      Object.keys(modules).forEach(function(v, i) {
+        result[v] = latestModules[v];
+      });
+      console.log("Result", result);
+
+      if (stderr)
+        console.log('stderr: ' + stderr);
       if (error !== null) {
         console.log('exec error: ' + error);
       }

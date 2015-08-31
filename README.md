@@ -56,31 +56,18 @@ Below is an example of how to include and compile a custom basscss source.
 @import 'basscss-background-colors';
 
 
-/* Optional Modules */
+/* Optional Modules (not included in Basscss by default) */
 /*
-@import 'basscss-base-buttons';
-@import 'basscss-button-sizes';
+@import 'basscss-btn-sizes';
 @import 'basscss-color-forms-dark';
 @import 'basscss-input-range';
 @import 'basscss-progress';
-@import 'basscss-button-outline';
-@import 'basscss-button-transparent';
 @import 'basscss-background-images';
 @import 'basscss-media-object';
 @import 'basscss-responsive-white-space';
 @import 'basscss-utility-headings';
 @import 'basscss-ui-utility-groups';
 @import 'basscss-table-object';
-@import 'basscss-color-buttons';
-@import 'basscss-button-link';
-@import 'basscss-button-blue';
-@import 'basscss-button-blue-outline';
-@import 'basscss-button-gray';
-@import 'basscss-button-light-gray';
-@import 'basscss-button-red';
-@import 'basscss-button-nav-light';
-@import 'basscss-button-nav-dark';
-@import 'basscss-button-nav-tab';
 @import 'basscss-highlight-dark';
 @import 'basscss-highlight';
 */
@@ -176,7 +163,6 @@ Below is an example of how to include and compile a custom basscss source.
   --link-color: var(--blue);
   --button-background-color: var(--blue);
   --pre-background-color: var(--silver);
-
 
 }
 */
