@@ -31,7 +31,7 @@ Npm.depends(npmDependencies);
 Package.registerBuildPlugin({
   name: 'cssnext-basscss',
   use: [
-    'kit:cssnext@0.3.2',
+    'kit:cssnext@0.3.3',
     'sanjo:meteor-files-helpers@1.1.0_7' ],
   sources: [
     'plugin/compile.js'
