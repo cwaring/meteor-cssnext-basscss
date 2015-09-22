@@ -1,13 +1,14 @@
 Package.describe({
   name: 'kit:cssnext-basscss',
-  version: '1.0.2',
+  version: '1.1.0',
   summary: 'Basscss realtime compiler for Meteor',
   git: 'https://github.com/cwaring/meteor-cssnext-basscss.git',
   documentation: 'README.md'
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.0');
+  api.versionsFrom('1.2');
+  api.use('isobuild:compiler-plugin@1.0.0');
 });
 
 var npmDependencies = {
@@ -31,8 +32,9 @@ Npm.depends(npmDependencies);
 Package.registerBuildPlugin({
   name: 'cssnext-basscss',
   use: [
-    'kit:cssnext@0.3.3',
-    'sanjo:meteor-files-helpers@1.1.0_7' ],
+    'ecmascript',
+    'sanjo:meteor-files-helpers@1.1.0_7',
+    'kit:cssnext@1.0.0'],
   sources: [
     'plugin/compile.js'
   ]
