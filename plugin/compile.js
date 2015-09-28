@@ -1,7 +1,16 @@
 const path = Plugin.path;
+var basscssPath;
 
-let basscssPath =
-  MeteorFilesHelpers.getNodeModulePath('kit:cssnext-basscss', 'basscss');
+// this fails when publishing a package as the cwd is outside of an app context
+// https://github.com/Sanjo/meteor-meteor-files-helpers/issues/9
+// fallback to static path for publishing only
+try {
+  basscssPath =
+    MeteorFilesHelpers.getNodeModulePath('kit:cssnext-basscss', 'basscss');
+} catch(e) {
+  basscssPath = path.join(process.cwd(),
+  '.meteor', 'local', 'isopacks', 'npm', 'node_modules', 'kit_cssnext-basscss')
+}
 
 let importDirs = [
   path.join(basscssPath, 'node_modules'), // basscore,

@@ -33,7 +33,7 @@ Package.registerBuildPlugin({
   name: 'cssnext-basscss',
   use: [
     'ecmascript',
-    'sanjo:meteor-files-helpers@1.1.0_7',
+    'sanjo:meteor-files-helpers@1.2.0_1',
     'kit:cssnext@1.0.0'],
   sources: [
     'plugin/compile.js'
