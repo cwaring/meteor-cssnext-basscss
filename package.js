@@ -7,8 +7,9 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.2');
+  api.versionsFrom('1.2.0.1');
   api.use('isobuild:compiler-plugin@1.0.0');
+  api.use('ecmascript', 'server')
 });
 
 var npmDependencies = {
@@ -34,7 +35,7 @@ Package.registerBuildPlugin({
   use: [
     'ecmascript',
     'sanjo:meteor-files-helpers@1.2.0_1',
-    'kit:cssnext@1.0.0'],
+    'kit:cssnext@1.0.1'],
   sources: [
     'plugin/compile.js'
   ]
