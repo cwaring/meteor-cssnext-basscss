@@ -35,7 +35,7 @@ Package.registerBuildPlugin({
   use: [
     'ecmascript',
     'sanjo:meteor-files-helpers@1.2.0_1',
-    'kit:cssnext@1.0.1'],
+    'kit:cssnext@1.0.2'],
   sources: [
     'plugin/compile.js'
   ]
