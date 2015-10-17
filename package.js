@@ -1,6 +1,6 @@
 Package.describe({
   name: 'kit:cssnext-basscss',
-  version: '1.1.0',
+  version: '1.1.1',
   summary: 'Basscss realtime compiler for Meteor',
   git: 'https://github.com/cwaring/meteor-cssnext-basscss.git',
   documentation: 'README.md'
